@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!--<Field ID="{}" Group="" Name="" DisplayName="" Description="" Type="Text"/>-->
+
+  <!--Meeting metadata-->
+  <Field ID="{a3a36b22-c551-462c-9ccb-205208770332}" Group="KB Columns" Name="MeetingNotes" DisplayName="Notes" Description="" Type="Note" RichText="FALSE" />
+  <Field ID="{4d55b920-f135-4a41-b7cb-4dd94151046d}" Group="KB Columns" Name="ConductedAt" DisplayName="Conducted at" Description="" Type="DateTime" Format="DateOnly" />
+  <Field ID="{a646fbed-e3cd-4551-b510-cc92d9eb3c43}" Group="KB Columns" Name="WitnessPosition" DisplayName="Witness position" Description="" Type="Text"/>
+  <Field ID="{165017b9-08c9-4e9e-8560-69488cf67abf}" Group="KB Columns" Name="Witness" DisplayName="Witness" Description="" Type="User"  UserSelectionMode="PeopleOnly" />
+  <Field ID="{36dfd900-a47a-11e0-8264-0800200c9a66}" Group="KB Columns" Name="OutcomeDueDate" DisplayName="Outcome Due Date" Description="" Type="DateTime" Format="DateOnly"/>
+  <Field ID="{2340e4d0-a55a-11e0-8264-0800200c9a66}" Group="KB Columns" Name="MeetingInternalRefNumber" DisplayName="Meeting Reference Number" Description="" Type="Text"/>
+  
+  <!--Attachment metadata-->
+  <Field ID="{0d08a178-d1b8-4042-a28c-4648ba4bb76a}" Group="KB Columns" Name="DocumentInternalNumber" DisplayName="Internal number" Description="" Type="Number" Decimals="2" />
+
+</Elements>

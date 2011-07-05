@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ContentType ID="0x0120D5200064ab7524b97440fcba3080cd5edb05ac"
+             Name="Meeting Document Set"
+             Group="KB Content Types"
+             Description="A custom document set."
+             ProgId="SharePoint.DocumentSet" >
+    <Folder TargetName="_cts/Meeting Document Set" />
+    <FieldRefs>
+      <FieldRef ID="{CBB92DA4-FD46-4C7D-AF6C-3128C2A5576E}" ShowInNewForm="TRUE" ShowInEditForm="TRUE"  Name="DocumentSetDescription" />
+      <FieldRef ID="{a3a36b22-c551-462c-9ccb-205208770332}" Name="MeetingNotes" Required="TRUE" />
+      <FieldRef ID="{4d55b920-f135-4a41-b7cb-4dd94151046d}" Name="ConductedAt"  Required="TRUE" />
+      <FieldRef ID="{a646fbed-e3cd-4551-b510-cc92d9eb3c43}" Name="WitnessPosition" Required="TRUE" />
+      <FieldRef ID="{165017b9-08c9-4e9e-8560-69488cf67abf}" Name="Witness" Required="TRUE" />
+      <FieldRef ID="{36dfd900-a47a-11e0-8264-0800200c9a66}" Name="OutcomeDueDate" />
+      <FieldRef ID="{2340e4d0-a55a-11e0-8264-0800200c9a66}" Name="MeetingInternalRefNumber" />
+    </FieldRefs>
+    <XmlDocuments>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/sharedfields">
+        <sf:SharedFields xmlns:sf="http://schemas.microsoft.com/office/documentsets/sharedfields" LastModified="1/1/2010 08:00:00 AM">
+        </sf:SharedFields>
+      </XmlDocument>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes">
+        <act:AllowedContentTypes xmlns:act="http://schemas.microsoft.com/office/documentsets/allowedcontenttypes" LastModified="1/1/2010 08:00:00 AM">
+          <AllowedContentType id="0x01010051a7427b4c1d4fe3aa6a9c0055f60067" />
+        </act:AllowedContentTypes>
+      </XmlDocument>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/welcomepagefields">
+        <wpFields:WelcomePageFields xmlns:wpFields="http://schemas.microsoft.com/office/documentsets/welcomepagefields" LastModified="1/1/2010 08:00:00 AM">
+          <WelcomePageField id="CBB92DA4-FD46-4C7D-AF6C-3128C2A5576E" />
+          <WelcomePageField id="4d55b920-f135-4a41-b7cb-4dd94151046d" />
+          <WelcomePageField id="165017b9-08c9-4e9e-8560-69488cf67abf" />
+          <WelcomePageField id="a646fbed-e3cd-4551-b510-cc92d9eb3c43" />
+        </wpFields:WelcomePageFields>
+      </XmlDocument>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/office/documentsets/defaultdocuments">
+        <dd:DefaultDocuments xmlns:dd="http://schemas.microsoft.com/office/documentsets/defaultdocuments" AddSetName="TRUE" LastModified="1/1/2010 08:00:00 AM">
+        </dd:DefaultDocuments>
+      </XmlDocument>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+        <FormUrls xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms/url">
+          <New>_layouts/NewDocSet.aspx</New>
+        </FormUrls>
+      </XmlDocument>
+      <XmlDocument NamespaceURI="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+        <FormTemplates  xmlns="http://schemas.microsoft.com/sharepoint/v3/contenttype/forms">
+          <Display>ListForm</Display>
+          <Edit>KBDocumentSetEdit</Edit>
+          <New>DocSetDisplayForm</New>
+        </FormTemplates>
+      </XmlDocument>
+    </XmlDocuments>
+  </ContentType>
+</Elements>

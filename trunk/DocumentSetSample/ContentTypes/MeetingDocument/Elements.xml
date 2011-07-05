@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Document (0x0101) -->
+  <ContentType ID="0x01010051a7427b4c1d4fe3aa6a9c0055f60067"
+               Name="Meeting Document"
+               Group="KB Content Types"
+               Description="Document related to every meeting"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+        <FieldRef ID="{0d08a178-d1b8-4042-a28c-4648ba4bb76a}" Name="DocumentInternalNumber" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

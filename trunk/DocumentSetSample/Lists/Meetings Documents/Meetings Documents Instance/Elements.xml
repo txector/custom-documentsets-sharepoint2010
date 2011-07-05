@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Meetings Documents"
+                OnQuickLaunch="TRUE"
+                TemplateType="60001"
+                Url="Meetings Documents Instance"
+                Description="Library for holding all documents related to company meetings">
+  </ListInstance>
+</Elements>
