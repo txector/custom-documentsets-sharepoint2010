@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="b045f541-f4ca-4ad6-891d-e559ef87cdcc" solutionId="b045f541-f4ca-4ad6-891d-e559ef87cdcc" resetWebServer="false" name="DocumentSetSample" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="KB.Core.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\KB.Core\KB.Core.csproj">
+      <safeControls>
+        <safeControl namespaceName="KB.Core" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </projectOutputAssembly>
+  </assemblies>
+  <features>
+    <featureReference itemId="a43d148e-1b6b-45a4-9dfd-4bdeb6994571" />
+    <featureReference itemId="e95a347c-250a-4bfc-a9c5-7c75964bb5c6" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="3e9d5f0b-f40e-4d77-91bb-2050d56d11c0" />
+    <projectItemReference itemId="c0ba597f-64a5-44f2-96bb-7c672dfb92ba" />
+  </projectItems>
+</package>

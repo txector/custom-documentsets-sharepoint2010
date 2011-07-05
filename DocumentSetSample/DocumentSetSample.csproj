@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{703C4E5D-7E1F-4A94-ACA4-835594A1141B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocumentSetSample</RootNamespace>
+    <AssemblyName>DocumentSetSample</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CONTROLTEMPLATES\KB\MeetingDetails.ascx.cs">
+      <DependentUpon>MeetingDetails.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CONTROLTEMPLATES\KB\MeetingDetails.ascx.designer.cs">
+      <DependentUpon>MeetingDetails.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentTypes\MeetingDocumentSet\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{95428e40-dc25-44c2-bd58-95c7844e126e}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\MeetingDocument\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bb0294ff-c806-4548-b4dc-8df0972160cb}</SharePointProjectItemId>
+    </None>
+    <None Include="CONTROLTEMPLATES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3e9d5f0b-f40e-4d77-91bb-2050d56d11c0}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\KB.Lists\KB.Lists.feature">
+      <FeatureId>{e95a347c-250a-4bfc-a9c5-7c75964bb5c6}</FeatureId>
+    </None>
+    <None Include="Features\KB.Definitions\KB.Definitions.feature">
+      <FeatureId>{a43d148e-1b6b-45a4-9dfd-4bdeb6994571}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c0ba597f-64a5-44f2-96bb-7c672dfb92ba}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Meetings Documents\Meetings Documents Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{47c45256-7f4a-4c19-9468-5431633f5b91}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Meetings Documents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a470a9ab-5a16-459f-8955-0c4b77d9e8c5}</SharePointProjectItemId>
+    </None>
+    <None Include="MeetingDocSetWelcomePage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{98566483-03db-4d1b-a235-cb2890500003}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{b045f541-f4ca-4ad6-891d-e559ef87cdcc}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SiteColumns\KBColumns\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0d699055-3089-467b-b4f4-65d926de3a78}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContentTypes\MeetingDocumentSet\Elements.xml" />
+    <Content Include="ContentTypes\MeetingDocument\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CONTROLTEMPLATES\KBDocSetEditTemplate.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="CONTROLTEMPLATES\KB\MeetingDetails.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Features\KB.Lists\KB.Lists.Template.xml">
+      <DependentUpon>KB.Lists.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\KB.Definitions\KB.Definitions.Template.xml">
+      <DependentUpon>KB.Definitions.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\KB\js\jquery-1.6.1.min.js" />
+    <Content Include="Lists\Meetings Documents\EditDlg.htm" />
+    <Content Include="Lists\Meetings Documents\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\Meetings Documents\FileDlg.htm" />
+    <Content Include="Lists\Meetings Documents\Meetings Documents Instance\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\Meetings Documents\Repair.aspx" />
+    <Content Include="Lists\Meetings Documents\Schema.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\Meetings Documents\Upload.aspx" />
+    <Content Include="MeetingDocSetWelcomePage\DocSetHomePage.aspx" />
+    <Content Include="MeetingDocSetWelcomePage\Elements.xml" />
+    <Content Include="SiteColumns\KBColumns\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>
